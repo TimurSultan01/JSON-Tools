@@ -5,8 +5,56 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:JSON_Tools"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="JSON" Height="450" Width="700">
     
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="5">
+            <!-- Button for Import -->
+            <Button Content="JSON-Datei laden"
+                    Click="LoadButton_Click"
+                    Margin="5,0,5,0"/>
+
+            <!-- Button for Export -->
+            <Button Content="Excel exportieren"
+                    Click="ExportButton_Click"/>
+        </StackPanel>
+        
+        <!-- DataGrid to display JSON data -->
+        <DataGrid Grid.Row="1" Margin="15,10" AutoGenerateColumns="False" 
+                  ItemsSource="{Binding Orders}" 
+                  IsReadOnly="True"
+                  GridLinesVisibility="Horizontal"
+                  HeadersVisibility="Column"
+                  AlternatingRowBackground="#F0F0F0">
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding OrderId}" Width="Auto" CanUserResize="False"/>
+                <DataGridTextColumn Header="Kunde" Binding="{Binding Customer}" Width="2*"/>
+                <DataGridTextColumn Header="Erstellungsdatum" Binding="{Binding Created, StringFormat='yyyy.MM.dd'}" Width="*"/>
+
+                <DataGridTextColumn Header="Gesamtwert (€)" Binding="{Binding Amount}" Width="*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Right"/>
+                            <Setter Property="FontWeight" Value="SemiBold"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Statusbar -->
+        <StatusBar Grid.Row="2" Height="25" Background="#E0E0E0">
+            <StatusBarItem>
+                <TextBlock Text="{Binding StatusMessage}" Foreground="#222"/>
+            </StatusBarItem>
+        </StatusBar>
     </Grid>
 </Window>
