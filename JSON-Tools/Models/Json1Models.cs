@@ -1,20 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net.Mail;
+using Newtonsoft.Json;
 
 namespace JSON_Tools.Models
 {
-    public class RootObject
+    public class Json1Root
     {
-        public List<Order> Orders { get; set; }
+        public List<Json1Order> Orders { get; set; }
     }
 
-    public class Order
+    public class Json1Order
     {
+        [JsonProperty("OrderId")]
         public int OrderId { get; set; }
+        [JsonProperty("customer")]
         public string Customer { get; set; }
+        [JsonProperty("created")]
         public DateTime Created { get; set; }
+        [JsonProperty("amount")]
         public decimal Amount { get; set; }
     }
 }

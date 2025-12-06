@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Windows;
 using ClosedXML.Excel;
 using JSON_Tools.Models;
 
@@ -7,40 +8,120 @@ namespace JSON_Tools.Services
 {
     public class ExcelExportService
     {
-        public void ExportToExcel(List<Order> orders, string filePath)
+        public void ExportToExcel(object data, string filePath)
         {
             using (var workbook = new XLWorkbook())
             {
                 var worksheet = workbook.Worksheets.Add("Export Daten");
 
-                // Add headers
-                worksheet.Cell(1, 1).Value = "ID";
-                worksheet.Cell(1, 2).Value = "Kunde";
-                worksheet.Cell(1, 3).Value = "Datum";
-                worksheet.Cell(1, 4).Value = "Gesamtwert";
-
-                // Format header
-                var headerRange = worksheet.Range("A1:D1");
-                headerRange.Style.Font.Bold = true;
-                headerRange.Style.Fill.BackgroundColor = XLColor.LightGray;
-
-                // Add order data
-                int row = 2;
-                foreach (var order in orders)
+                if (data is List<Json1Order> list1)
                 {
-                    worksheet.Cell(row, 1).Value = order.OrderId;
-                    worksheet.Cell(row, 2).Value = order.Customer;
-                    worksheet.Cell(row, 3).Value = order.Created;
-                    worksheet.Cell(row, 3).Style.DateFormat.Format = "yyyy.MM.dd";
-                    worksheet.Cell(row, 4).Value = order.Amount;
-                    worksheet.Cell(row, 4).Style.NumberFormat.Format = "#,##0.00 €";
+                    ExportJson1(worksheet, list1);
+                }
+                else if (data is List<Json2Order> list2)
+                {
+                    ExportJson2(worksheet, list2);
+                }
+                else if (data is List<Json3Order> list3)
+                {
+                    ExportJson3(worksheet, list3);
+                }
 
-                    row++;
+                else
+                {
+                    throw new ArgumentException("Unbekanntes Format für den Export.");
                 }
 
                 worksheet.Columns().AdjustToContents();
                 workbook.SaveAs(filePath);
             }
+        }
+
+        private void ExportJson1(IXLWorksheet worksheet, List<Json1Order> orders)
+        {
+            worksheet.Cell(1, 1).Value = "ID";
+            worksheet.Cell(1, 2).Value = "Kunde";
+            worksheet.Cell(1, 3).Value = "Datum";
+            worksheet.Cell(1, 4).Value = "Gesamtbetrag";
+            StyleHeader(worksheet, 4);
+
+            int row = 2;
+            foreach (var order in orders)
+            {
+                worksheet.Cell(row, 1).Value = order.OrderId;
+                worksheet.Cell(row, 2).Value = order.Customer;
+                worksheet.Cell(row, 3).Value = order.Created;
+                worksheet.Cell(row, 4).Value = order.Amount;
+                worksheet.Cell(row, 4).Style.NumberFormat.Format = "#,##0.00 €";
+                row++;
+            }
+        }
+
+        private void ExportJson2(IXLWorksheet worksheet, List<Json2Order> orders)
+        {
+            worksheet.Cell(1, 1).Value = "ID";
+            worksheet.Cell(1, 2).Value = "Kunde";
+            worksheet.Cell(1, 3).Value = "Datum";
+            worksheet.Cell(1, 4).Value = "SKU";
+            worksheet.Cell(1, 5).Value = "Menge";
+            worksheet.Cell(1, 6).Value = "Preis";
+            StyleHeader(worksheet, 6);
+
+            int row = 2;
+            foreach (var order in orders)
+            {
+                foreach (var item in order.Items)
+                {
+                    worksheet.Cell(row, 1).Value = order.OrderId;
+                    worksheet.Cell(row, 2).Value = order.Customer;
+                    worksheet.Cell(row, 3).Value = order.Created;
+                    worksheet.Cell(row, 4).Value = item.Sku;
+                    worksheet.Cell(row, 5).Value = item.Qty;
+                    worksheet.Cell(row, 6).Value = item.Price;
+                    worksheet.Cell(row, 6).Style.NumberFormat.Format = "#,##0.00 €";
+                    row++;
+                }
+            }
+        }
+
+        private void ExportJson3(IXLWorksheet worksheet, List<Json3Order> orders)
+        {
+            worksheet.Cell(1, 1).Value = "ID";
+            worksheet.Cell(1, 2).Value = "Kunde";
+            worksheet.Cell(1, 3).Value = "Status";
+            worksheet.Cell(1, 4).Value = "Vertreter";
+            worksheet.Cell(1, 5).Value = "SKU";
+            worksheet.Cell(1, 6).Value = "Menge";
+            worksheet.Cell(1, 7).Value = "Preis";
+            worksheet.Cell(1, 8).Value = "Lieferadresse";
+            worksheet.Cell(1, 9).Value = "Lieferdatum";
+            StyleHeader(worksheet, 9);
+
+            int row = 2;
+            foreach (var order in orders)
+            {
+                foreach (var item in order.Items)
+                {
+                    worksheet.Cell(row, 1).Value = order.OrderId;
+                    worksheet.Cell(row, 2).Value = order.Customer;
+                    worksheet.Cell(row, 3).Value = order.Status;
+                    worksheet.Cell(row, 4).Value = order.SalesRep;
+                    worksheet.Cell(row, 5).Value = item.Sku;
+                    worksheet.Cell(row, 6).Value = item.Qty;
+                    worksheet.Cell(row, 7).Value = item.Price;
+                    worksheet.Cell(row, 7).Style.NumberFormat.Format = "#,##0.00 €";
+                    worksheet.Cell(row, 8).Value = order.Delivery?.Address;
+                    worksheet.Cell(row, 9).Value = order.Delivery?.DeliveryDate;
+                    row++;
+                }
+            }
+        }
+
+        private void StyleHeader(IXLWorksheet ws, int colCount)
+        {
+            var range = ws.Range(1, 1, 1, colCount);
+            range.Style.Font.Bold = true;
+            range.Style.Fill.BackgroundColor = XLColor.LightGray;
         }
     }
 }
