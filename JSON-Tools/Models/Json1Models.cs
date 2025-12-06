@@ -11,13 +11,13 @@ namespace JSON_Tools.Models
 
     public class Json1Order
     {
-        [JsonProperty("OrderId")]
+        [JsonProperty("OrderId", Required = Required.Always)]
         public int OrderId { get; set; }
-        [JsonProperty("customer")]
+        [JsonProperty("customer", Required = Required.Always)]
         public string Customer { get; set; }
-        [JsonProperty("created")]
+        [JsonProperty("created", Required = Required.Always)]
         public DateTime Created { get; set; }
-        [JsonProperty("amount")]
+        [JsonProperty("amount", Required = Required.Always)]
         public decimal Amount { get; set; }
     }
 }

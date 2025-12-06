@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using Newtonsoft.Json;
 using JSON_Tools.Models;
 
@@ -14,9 +13,40 @@ namespace JSON_Tools.Services.Importers
 
         public object Import(string json)
         {
-            var root = JsonConvert.DeserializeObject<Json3Root>(json);
+            var settings = new JsonSerializerSettings
+            {
+                MissingMemberHandling = MissingMemberHandling.Error
+            };
 
-            return root?.Orders ?? new List<Json3Order>();
+            try
+            {
+                var root = JsonConvert.DeserializeObject<Json3Root>(json, settings);
+                return root?.Orders ?? new List<Json3Order>();
+            }
+            catch (JsonSerializationException ex)
+            {
+                throw new InvalidOperationException(TranslateError(ex));
+            }
+        }
+
+        private string TranslateError(JsonSerializationException ex)
+        {
+            if (ex.Message.Contains("Could not find member"))
+            {
+                var field = ex.Message.Split('\'')[1];
+                return $"Das Feld '{field}' ist in diesem Format nicht erlaubt.";
+            }
+            if (ex.Message.Contains("Required property"))
+            {
+                var field = ex.Message.Split('\'')[1];
+                return $"Das Pflichtfeld '{field}' fehlt komplett.";
+            }
+            if (ex.Message.Contains("Error converting value"))
+            {
+                return $"Ein Feld hat den falschen Datentyp (z.B. Text statt Zahl).\nDetails: {ex.Path}";
+            }
+
+            return $"Strukturfehler: {ex.Message}";
         }
     }
 }

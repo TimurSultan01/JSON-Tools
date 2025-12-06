@@ -14,7 +14,12 @@ namespace JSON_Tools.Services
 
         public object LoadOrders(string filePath)
         {
-           var json = File.ReadAllText(filePath);
+            if (!File.Exists(filePath))
+            {
+                throw new FileNotFoundException("Datei nicht gefunden.", filePath);
+            }
+
+            string json = File.ReadAllText(filePath);
             return _dispatcher.Import(json);
         }
     }

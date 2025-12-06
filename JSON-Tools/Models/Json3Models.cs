@@ -12,19 +12,19 @@ namespace JSON_Tools.Models
 
     public class Json3Order
     {
-        [JsonProperty("orderId")]
+        [JsonProperty("orderId", Required = Required.Always)]
         public int OrderId { get; set; }
-        [JsonProperty("customer")]
+        [JsonProperty("customer", Required = Required.Always)]
         public string Customer { get; set; }
-        [JsonProperty("created")]
+        [JsonProperty("created", Required = Required.Always)]
         public DateTime Created { get; set; }
-        [JsonProperty("status")]
+        [JsonProperty("status", Required = Required.Always)]
         public string Status { get; set; }
-        [JsonProperty("salesRep")]
+        [JsonProperty("salesRep", Required = Required.Always)] 
         public string SalesRep { get; set; }
-        [JsonProperty("delivery")]
+        [JsonProperty("delivery", Required = Required.Always)]
         public Json3Delivery Delivery { get; set; }
-        [JsonProperty("items")]
+        [JsonProperty("items", Required = Required.Always)]
         public List<Json3Item> Items { get; set; }
 
         [JsonIgnore]
@@ -33,11 +33,11 @@ namespace JSON_Tools.Models
 
     public class Json3Item
     {
-        [JsonProperty("sku")]
+        [JsonProperty("sku", Required = Required.Always)]
         public string Sku { get; set; }
-        [JsonProperty("qty")]
+        [JsonProperty("qty", Required = Required.Always)]
         public int Qty { get; set; }
-        [JsonProperty("price")]
+        [JsonProperty("price", Required = Required.Always)]
         public decimal Price { get; set; }
 
         [JsonIgnore]
@@ -45,7 +45,7 @@ namespace JSON_Tools.Models
     }
     public class Json3Delivery
     {
-        [JsonProperty("address")]
+        [JsonProperty("address", Required = Required.Always)]
         public string Address { get; set; }
         [JsonProperty("deliveryDate")]
         public DateTime? DeliveryDate { get; set; }

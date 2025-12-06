@@ -27,6 +27,12 @@ namespace JSON_Tools.Services
             }
         }
 
+        // Helper method to handle null or empty values
+        private string GetVal(string value)
+        {
+            return string.IsNullOrEmpty(value) ? "-" : value;
+        }
+
         private void ExportJson1(IXLWorksheet worksheet, List<Json1Order> orders)
         {
             worksheet.Cell(1, 1).Value = "ID";
@@ -39,7 +45,7 @@ namespace JSON_Tools.Services
             foreach (var order in orders)
             {
                 worksheet.Cell(row, 1).Value = order.OrderId;
-                worksheet.Cell(row, 2).Value = order.Customer;
+                worksheet.Cell(row, 2).Value = GetVal(order.Customer);
                 worksheet.Cell(row, 3).Value = order.Created;
                 worksheet.Cell(row, 3).Style.DateFormat.Format = "dd.MM.yyyy";
                 worksheet.Cell(row, 4).Value = order.Amount;
@@ -67,7 +73,7 @@ namespace JSON_Tools.Services
                 if (order.Items == null || order.Items.Count == 0)
                 {
                     worksheet.Cell(row, 1).Value = order.OrderId;
-                    worksheet.Cell(row, 2).Value = order.Customer;
+                    worksheet.Cell(row, 2).Value = GetVal(order.Customer);
                     worksheet.Cell(row, 3).Value = order.Created;
                     worksheet.Cell(row, 3).Style.DateFormat.Format = "dd.MM.yyyy";
                     worksheet.Cell(row, 4).Value = "-";
@@ -83,10 +89,10 @@ namespace JSON_Tools.Services
                     foreach (var item in order.Items)
                     {
                         worksheet.Cell(row, 1).Value = order.OrderId;
-                        worksheet.Cell(row, 2).Value = order.Customer;
+                        worksheet.Cell(row, 2).Value = GetVal(order.Customer);
                         worksheet.Cell(row, 3).Value = order.Created;
                         worksheet.Cell(row, 3).Style.DateFormat.Format = "dd.MM.yyyy";
-                        worksheet.Cell(row, 4).Value = item.Sku;
+                        worksheet.Cell(row, 4).Value = GetVal(item.Sku);
                         worksheet.Cell(row, 5).Value = item.Qty;
                         worksheet.Cell(row, 6).Value = item.Price;
                         worksheet.Cell(row, 6).Style.NumberFormat.Format = "#,##0.00 €";
@@ -123,16 +129,16 @@ namespace JSON_Tools.Services
                 if (order.Items == null || order.Items.Count == 0)
                 {
                     worksheet.Cell(row, 1).Value = order.OrderId;
-                    worksheet.Cell(row, 2).Value = order.Customer;
+                    worksheet.Cell(row, 2).Value = GetVal(order.Customer);
                     worksheet.Cell(row, 3).Value = order.Created;
                     worksheet.Cell(row, 3).Style.DateFormat.Format = "dd.MM.yyyy";
-                    worksheet.Cell(row, 4).Value = order.Status;
-                    worksheet.Cell(row, 5).Value = order.SalesRep;
+                    worksheet.Cell(row, 4).Value = GetVal(order.Status);
+                    worksheet.Cell(row, 5).Value = GetVal(order.SalesRep);
                     worksheet.Cell(row, 6).Value = "-";
                     worksheet.Cell(row, 7).Value = "-";
                     worksheet.Cell(row, 8).Value = 0;
                     worksheet.Cell(row, 9).Value = 0;
-                    worksheet.Cell(row, 10).Value = order.Delivery?.Address;
+                    worksheet.Cell(row, 10).Value = GetVal(order.Delivery?.Address);
 
                     if (order.Delivery?.DeliveryDate != null)
                     {
@@ -151,18 +157,18 @@ namespace JSON_Tools.Services
                     foreach (var item in order.Items)
                     {
                         worksheet.Cell(row, 1).Value = order.OrderId;
-                        worksheet.Cell(row, 2).Value = order.Customer;
+                        worksheet.Cell(row, 2).Value = GetVal(order.Customer);
                         worksheet.Cell(row, 3).Value = order.Created;
                         worksheet.Cell(row, 3).Style.DateFormat.Format = "dd.MM.yyyy";
-                        worksheet.Cell(row, 4).Value = order.Status;
-                        worksheet.Cell(row, 5).Value = order.SalesRep;
-                        worksheet.Cell(row, 6).Value = item.Sku;
+                        worksheet.Cell(row, 4).Value = GetVal(order.Status);
+                        worksheet.Cell(row, 5).Value = GetVal(order.SalesRep);
+                        worksheet.Cell(row, 6).Value = GetVal(item.Sku);
                         worksheet.Cell(row, 7).Value = item.Qty;
                         worksheet.Cell(row, 8).Value = item.Price;
                         worksheet.Cell(row, 8).Style.NumberFormat.Format = "#,##0.00 €";
                         worksheet.Cell(row, 9).Value = item.ItemTotal;
                         worksheet.Cell(row, 9).Style.NumberFormat.Format = "#,##0.00 €";
-                        worksheet.Cell(row, 10).Value = order.Delivery?.Address;
+                        worksheet.Cell(row, 10).Value = GetVal(order.Delivery?.Address);
 
                         if (order.Delivery?.DeliveryDate != null)
                         {
