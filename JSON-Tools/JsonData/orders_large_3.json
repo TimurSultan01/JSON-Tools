@@ -1,0 +1,1197 @@
+{
+  "orders": [
+    {
+      "orderId": 4000,
+      "customer": "Innotech AG",
+      "created": "2023-10-01",
+      "status": "shipped",
+      "salesRep": "M. Wagner",
+      "delivery": {
+        "address": "Musterstra\u00dfe 12, 80331 M\u00fcnchen",
+        "deliveryDate": "2023-10-04"
+      },
+      "items": [
+        {
+          "sku": "Z300",
+          "qty": 9,
+          "price": 713.84
+        },
+        {
+          "sku": "X101",
+          "qty": 6,
+          "price": 1229.81
+        },
+        {
+          "sku": "Z300",
+          "qty": 6,
+          "price": 277.93
+        }
+      ]
+    },
+    {
+      "orderId": 4001,
+      "customer": "Innotech AG",
+      "created": "2023-10-02",
+      "status": "shipped",
+      "salesRep": "M. Wagner",
+      "delivery": {
+        "address": "Parkallee 7, 28209 Bremen",
+        "deliveryDate": null
+      },
+      "items": []
+    },
+    {
+      "orderId": 4002,
+      "customer": "Proline GmbH",
+      "created": "2023-10-03",
+      "status": "cancelled",
+      "salesRep": "T. Becker",
+      "delivery": {
+        "address": "Industriestra\u00dfe 88, 90402 N\u00fcrnberg",
+        "deliveryDate": "2023-10-08"
+      },
+      "items": [
+        {
+          "sku": "X100",
+          "qty": 4,
+          "price": 308.75
+        },
+        {
+          "sku": "Z300",
+          "qty": 10,
+          "price": 393.56
+        },
+        {
+          "sku": "Z300",
+          "qty": 5,
+          "price": 1708.89
+        }
+      ]
+    },
+    {
+      "orderId": 4003,
+      "customer": "Proline GmbH",
+      "created": "2023-10-04",
+      "status": "cancelled",
+      "salesRep": "T. Becker",
+      "delivery": {
+        "address": "Musterstra\u00dfe 12, 80331 M\u00fcnchen",
+        "deliveryDate": "2023-10-12"
+      },
+      "items": [
+        {
+          "sku": "X101",
+          "qty": 2,
+          "price": 1421.84
+        },
+        {
+          "sku": "Y201",
+          "qty": 3,
+          "price": 1076.86
+        }
+      ]
+    },
+    {
+      "orderId": 4004,
+      "customer": "Proline GmbH",
+      "created": "2023-10-05",
+      "status": "processing",
+      "salesRep": "M. Wagner",
+      "delivery": {
+        "address": "Hauptstra\u00dfe 4, 45130 Essen",
+        "deliveryDate": "2023-10-07"
+      },
+      "items": [
+        {
+          "sku": "X100",
+          "qty": 2,
+          "price": 1798.77
+        }
+      ]
+    },
+    {
+      "orderId": 4005,
+      "customer": "CloudNet GmbH",
+      "created": "2023-10-06",
+      "status": "cancelled",
+      "salesRep": "A. Schulz",
+      "delivery": {
+        "address": "Musterstra\u00dfe 12, 80331 M\u00fcnchen",
+        "deliveryDate": "2023-10-09"
+      },
+      "items": [
+        {
+          "sku": "Y200",
+          "qty": 4,
+          "price": 1958.71
+        },
+        {
+          "sku": "X100",
+          "qty": 3,
+          "price": 1541.71
+        },
+        {
+          "sku": "Y200",
+          "qty": 6,
+          "price": 627.3
+        },
+        {
+          "sku": "Y201",
+          "qty": 7,
+          "price": 374.31
+        },
+        {
+          "sku": "Y201",
+          "qty": 8,
+          "price": 595.36
+        }
+      ]
+    },
+    {
+      "orderId": 4006,
+      "customer": "CloudNet GmbH",
+      "created": "2023-10-07",
+      "status": "processing",
+      "salesRep": "M. Wagner",
+      "delivery": {
+        "address": "Parkallee 7, 28209 Bremen",
+        "deliveryDate": "2023-10-13"
+      },
+      "items": [
+        {
+          "sku": "Y201",
+          "qty": 10,
+          "price": 728.29
+        },
+        {
+          "sku": "X100",
+          "qty": 4,
+          "price": 1827.21
+        },
+        {
+          "sku": "Z300",
+          "qty": 2,
+          "price": 100.27
+        },
+        {
+          "sku": "Z300",
+          "qty": 2,
+          "price": 233.95
+        }
+      ]
+    },
+    {
+      "orderId": 4007,
+      "customer": "Proline GmbH",
+      "created": "2023-10-08",
+      "status": "shipped",
+      "salesRep": "T. Becker",
+      "delivery": {
+        "address": "Hauptstra\u00dfe 4, 45130 Essen",
+        "deliveryDate": "2023-10-11"
+      },
+      "items": [
+        {
+          "sku": "Y200",
+          "qty": 6,
+          "price": 1692.13
+        },
+        {
+          "sku": "Z300",
+          "qty": 2,
+          "price": 1874.25
+        }
+      ]
+    },
+    {
+      "orderId": 4008,
+      "customer": "Kranbau SE",
+      "created": "2023-10-09",
+      "status": "processing",
+      "salesRep": "M. Wagner",
+      "delivery": {
+        "address": "Industriestra\u00dfe 88, 90402 N\u00fcrnberg",
+        "deliveryDate": "2023-10-16"
+      },
+      "items": [
+        {
+          "sku": "Y201",
+          "qty": 10,
+          "price": 815.05
+        },
+        {
+          "sku": "Y200",
+          "qty": 2,
+          "price": 1709.97
+        },
+        {
+          "sku": "X101",
+          "qty": 7,
+          "price": 1720.22
+        }
+      ]
+    },
+    {
+      "orderId": 4009,
+      "customer": "Proline GmbH",
+      "created": "2023-10-10",
+      "status": "shipped",
+      "salesRep": "M. Wagner",
+      "delivery": {
+        "address": "Parkallee 7, 28209 Bremen",
+        "deliveryDate": null
+      },
+      "items": []
+    },
+    {
+      "orderId": 4010,
+      "customer": "Kranbau SE",
+      "created": "2023-10-11",
+      "status": "cancelled",
+      "salesRep": "T. Becker",
+      "delivery": {
+        "address": "Parkallee 7, 28209 Bremen",
+        "deliveryDate": null
+      },
+      "items": []
+    },
+    {
+      "orderId": 4011,
+      "customer": "Proline GmbH",
+      "created": "2023-10-12",
+      "status": "shipped",
+      "salesRep": "A. Schulz",
+      "delivery": {
+        "address": "Musterstra\u00dfe 12, 80331 M\u00fcnchen",
+        "deliveryDate": "2023-10-21"
+      },
+      "items": [
+        {
+          "sku": "X101",
+          "qty": 3,
+          "price": 1549.89
+        },
+        {
+          "sku": "Z300",
+          "qty": 5,
+          "price": 1571.36
+        },
+        {
+          "sku": "X100",
+          "qty": 4,
+          "price": 1295.87
+        }
+      ]
+    },
+    {
+      "orderId": 4012,
+      "customer": "CloudNet GmbH",
+      "created": "2023-10-13",
+      "status": "cancelled",
+      "salesRep": "A. Schulz",
+      "delivery": {
+        "address": "Musterstra\u00dfe 12, 80331 M\u00fcnchen",
+        "deliveryDate": "2023-10-21"
+      },
+      "items": [
+        {
+          "sku": "Y200",
+          "qty": 5,
+          "price": 263.22
+        },
+        {
+          "sku": "X100",
+          "qty": 2,
+          "price": 238.99
+        },
+        {
+          "sku": "X100",
+          "qty": 9,
+          "price": 85.31
+        }
+      ]
+    },
+    {
+      "orderId": 4013,
+      "customer": "Kranbau SE",
+      "created": "2023-10-14",
+      "status": "cancelled",
+      "salesRep": "A. Schulz",
+      "delivery": {
+        "address": "Industriestra\u00dfe 88, 90402 N\u00fcrnberg",
+        "deliveryDate": "2023-10-15"
+      },
+      "items": [
+        {
+          "sku": "X100",
+          "qty": 5,
+          "price": 936.27
+        },
+        {
+          "sku": "X100",
+          "qty": 1,
+          "price": 1424.57
+        },
+        {
+          "sku": "X100",
+          "qty": 4,
+          "price": 90.63
+        },
+        {
+          "sku": "X100",
+          "qty": 8,
+          "price": 708.05
+        }
+      ]
+    },
+    {
+      "orderId": 4014,
+      "customer": "Kranbau SE",
+      "created": "2023-10-15",
+      "status": "processing",
+      "salesRep": "M. Wagner",
+      "delivery": {
+        "address": "Hauptstra\u00dfe 4, 45130 Essen",
+        "deliveryDate": "2023-10-22"
+      },
+      "items": [
+        {
+          "sku": "Y201",
+          "qty": 6,
+          "price": 1166.87
+        },
+        {
+          "sku": "Y200",
+          "qty": 8,
+          "price": 1197.13
+        }
+      ]
+    },
+    {
+      "orderId": 4015,
+      "customer": "CloudNet GmbH",
+      "created": "2023-10-16",
+      "status": "shipped",
+      "salesRep": "A. Schulz",
+      "delivery": {
+        "address": "Industriestra\u00dfe 88, 90402 N\u00fcrnberg",
+        "deliveryDate": "2023-10-22"
+      },
+      "items": [
+        {
+          "sku": "Y200",
+          "qty": 1,
+          "price": 958.19
+        },
+        {
+          "sku": "X101",
+          "qty": 9,
+          "price": 1031.9
+        },
+        {
+          "sku": "X101",
+          "qty": 3,
+          "price": 1595.97
+        }
+      ]
+    },
+    {
+      "orderId": 4016,
+      "customer": "Proline GmbH",
+      "created": "2023-10-17",
+      "status": "cancelled",
+      "salesRep": "M. Wagner",
+      "delivery": {
+        "address": "Hauptstra\u00dfe 4, 45130 Essen",
+        "deliveryDate": "2023-10-23"
+      },
+      "items": [
+        {
+          "sku": "X100",
+          "qty": 1,
+          "price": 1442.92
+        },
+        {
+          "sku": "Y201",
+          "qty": 1,
+          "price": 1905.92
+        },
+        {
+          "sku": "Y201",
+          "qty": 4,
+          "price": 832.28
+        },
+        {
+          "sku": "Y200",
+          "qty": 8,
+          "price": 1653.89
+        }
+      ]
+    },
+    {
+      "orderId": 4017,
+      "customer": "Kranbau SE",
+      "created": "2023-10-18",
+      "status": "shipped",
+      "salesRep": "T. Becker",
+      "delivery": {
+        "address": "Hauptstra\u00dfe 4, 45130 Essen",
+        "deliveryDate": "2023-10-28"
+      },
+      "items": [
+        {
+          "sku": "Y200",
+          "qty": 2,
+          "price": 542.26
+        },
+        {
+          "sku": "X101",
+          "qty": 5,
+          "price": 1679.75
+        },
+        {
+          "sku": "Y200",
+          "qty": 4,
+          "price": 1484.41
+        },
+        {
+          "sku": "X100",
+          "qty": 5,
+          "price": 905.38
+        },
+        {
+          "sku": "Y201",
+          "qty": 6,
+          "price": 1275.21
+        }
+      ]
+    },
+    {
+      "orderId": 4018,
+      "customer": "Proline GmbH",
+      "created": "2023-10-19",
+      "status": "cancelled",
+      "salesRep": "T. Becker",
+      "delivery": {
+        "address": "Industriestra\u00dfe 88, 90402 N\u00fcrnberg",
+        "deliveryDate": null
+      },
+      "items": []
+    },
+    {
+      "orderId": 4019,
+      "customer": "Proline GmbH",
+      "created": "2023-10-20",
+      "status": "processing",
+      "salesRep": "A. Schulz",
+      "delivery": {
+        "address": "Parkallee 7, 28209 Bremen",
+        "deliveryDate": "2023-10-26"
+      },
+      "items": [
+        {
+          "sku": "Z300",
+          "qty": 9,
+          "price": 220.73
+        }
+      ]
+    },
+    {
+      "orderId": 4020,
+      "customer": "Innotech AG",
+      "created": "2023-10-21",
+      "status": "shipped",
+      "salesRep": "A. Schulz",
+      "delivery": {
+        "address": "Musterstra\u00dfe 12, 80331 M\u00fcnchen",
+        "deliveryDate": "2023-10-29"
+      },
+      "items": [
+        {
+          "sku": "Y201",
+          "qty": 6,
+          "price": 1971.18
+        },
+        {
+          "sku": "X100",
+          "qty": 9,
+          "price": 1644.83
+        },
+        {
+          "sku": "Y200",
+          "qty": 6,
+          "price": 369.88
+        },
+        {
+          "sku": "X100",
+          "qty": 6,
+          "price": 920.5
+        }
+      ]
+    },
+    {
+      "orderId": 4021,
+      "customer": "Proline GmbH",
+      "created": "2023-10-22",
+      "status": "cancelled",
+      "salesRep": "T. Becker",
+      "delivery": {
+        "address": "Parkallee 7, 28209 Bremen",
+        "deliveryDate": "2023-10-28"
+      },
+      "items": [
+        {
+          "sku": "Y200",
+          "qty": 2,
+          "price": 991.48
+        },
+        {
+          "sku": "X100",
+          "qty": 6,
+          "price": 1844.05
+        }
+      ]
+    },
+    {
+      "orderId": 4022,
+      "customer": "Kranbau SE",
+      "created": "2023-10-23",
+      "status": "processing",
+      "salesRep": "T. Becker",
+      "delivery": {
+        "address": "Industriestra\u00dfe 88, 90402 N\u00fcrnberg",
+        "deliveryDate": null
+      },
+      "items": []
+    },
+    {
+      "orderId": 4023,
+      "customer": "Innotech AG",
+      "created": "2023-10-24",
+      "status": "shipped",
+      "salesRep": "A. Schulz",
+      "delivery": {
+        "address": "Hauptstra\u00dfe 4, 45130 Essen",
+        "deliveryDate": null
+      },
+      "items": []
+    },
+    {
+      "orderId": 4024,
+      "customer": "CloudNet GmbH",
+      "created": "2023-10-25",
+      "status": "processing",
+      "salesRep": "A. Schulz",
+      "delivery": {
+        "address": "Parkallee 7, 28209 Bremen",
+        "deliveryDate": "2023-11-01"
+      },
+      "items": [
+        {
+          "sku": "Z300",
+          "qty": 5,
+          "price": 918.77
+        }
+      ]
+    },
+    {
+      "orderId": 4025,
+      "customer": "Kranbau SE",
+      "created": "2023-10-26",
+      "status": "processing",
+      "salesRep": "T. Becker",
+      "delivery": {
+        "address": "Parkallee 7, 28209 Bremen",
+        "deliveryDate": "2023-10-29"
+      },
+      "items": [
+        {
+          "sku": "Y200",
+          "qty": 4,
+          "price": 299.32
+        },
+        {
+          "sku": "X101",
+          "qty": 8,
+          "price": 235.56
+        },
+        {
+          "sku": "Z300",
+          "qty": 8,
+          "price": 993.97
+        }
+      ]
+    },
+    {
+      "orderId": 4026,
+      "customer": "Innotech AG",
+      "created": "2023-10-27",
+      "status": "shipped",
+      "salesRep": "A. Schulz",
+      "delivery": {
+        "address": "Musterstra\u00dfe 12, 80331 M\u00fcnchen",
+        "deliveryDate": null
+      },
+      "items": []
+    },
+    {
+      "orderId": 4027,
+      "customer": "Innotech AG",
+      "created": "2023-10-28",
+      "status": "processing",
+      "salesRep": "M. Wagner",
+      "delivery": {
+        "address": "Musterstra\u00dfe 12, 80331 M\u00fcnchen",
+        "deliveryDate": null
+      },
+      "items": []
+    },
+    {
+      "orderId": 4028,
+      "customer": "Innotech AG",
+      "created": "2023-10-29",
+      "status": "processing",
+      "salesRep": "T. Becker",
+      "delivery": {
+        "address": "Musterstra\u00dfe 12, 80331 M\u00fcnchen",
+        "deliveryDate": "2023-11-06"
+      },
+      "items": [
+        {
+          "sku": "X100",
+          "qty": 8,
+          "price": 1489.18
+        },
+        {
+          "sku": "Y201",
+          "qty": 3,
+          "price": 1315.78
+        }
+      ]
+    },
+    {
+      "orderId": 4029,
+      "customer": "Proline GmbH",
+      "created": "2023-10-30",
+      "status": "cancelled",
+      "salesRep": "M. Wagner",
+      "delivery": {
+        "address": "Parkallee 7, 28209 Bremen",
+        "deliveryDate": "2023-11-07"
+      },
+      "items": [
+        {
+          "sku": "X101",
+          "qty": 3,
+          "price": 1186.08
+        },
+        {
+          "sku": "X100",
+          "qty": 1,
+          "price": 1867.01
+        },
+        {
+          "sku": "Z300",
+          "qty": 2,
+          "price": 1956.12
+        },
+        {
+          "sku": "Y201",
+          "qty": 2,
+          "price": 1061.6
+        },
+        {
+          "sku": "Y201",
+          "qty": 1,
+          "price": 998.02
+        }
+      ]
+    },
+    {
+      "orderId": 4030,
+      "customer": "CloudNet GmbH",
+      "created": "2023-10-01",
+      "status": "cancelled",
+      "salesRep": "A. Schulz",
+      "delivery": {
+        "address": "Musterstra\u00dfe 12, 80331 M\u00fcnchen",
+        "deliveryDate": "2023-10-10"
+      },
+      "items": [
+        {
+          "sku": "Y200",
+          "qty": 2,
+          "price": 1268.77
+        }
+      ]
+    },
+    {
+      "orderId": 4031,
+      "customer": "Innotech AG",
+      "created": "2023-10-02",
+      "status": "processing",
+      "salesRep": "M. Wagner",
+      "delivery": {
+        "address": "Musterstra\u00dfe 12, 80331 M\u00fcnchen",
+        "deliveryDate": "2023-10-10"
+      },
+      "items": [
+        {
+          "sku": "Y201",
+          "qty": 1,
+          "price": 1643.5
+        },
+        {
+          "sku": "Y201",
+          "qty": 4,
+          "price": 1281.79
+        }
+      ]
+    },
+    {
+      "orderId": 4032,
+      "customer": "CloudNet GmbH",
+      "created": "2023-10-03",
+      "status": "shipped",
+      "salesRep": "T. Becker",
+      "delivery": {
+        "address": "Musterstra\u00dfe 12, 80331 M\u00fcnchen",
+        "deliveryDate": null
+      },
+      "items": []
+    },
+    {
+      "orderId": 4033,
+      "customer": "Proline GmbH",
+      "created": "2023-10-04",
+      "status": "cancelled",
+      "salesRep": "M. Wagner",
+      "delivery": {
+        "address": "Hauptstra\u00dfe 4, 45130 Essen",
+        "deliveryDate": "2023-10-10"
+      },
+      "items": [
+        {
+          "sku": "X100",
+          "qty": 10,
+          "price": 1481.37
+        },
+        {
+          "sku": "Z300",
+          "qty": 5,
+          "price": 611.38
+        },
+        {
+          "sku": "Z300",
+          "qty": 6,
+          "price": 312.41
+        }
+      ]
+    },
+    {
+      "orderId": 4034,
+      "customer": "Proline GmbH",
+      "created": "2023-10-05",
+      "status": "cancelled",
+      "salesRep": "A. Schulz",
+      "delivery": {
+        "address": "Hauptstra\u00dfe 4, 45130 Essen",
+        "deliveryDate": "2023-10-12"
+      },
+      "items": [
+        {
+          "sku": "Y201",
+          "qty": 6,
+          "price": 1161.98
+        },
+        {
+          "sku": "X100",
+          "qty": 4,
+          "price": 684.58
+        },
+        {
+          "sku": "Y201",
+          "qty": 6,
+          "price": 1506.66
+        },
+        {
+          "sku": "Y200",
+          "qty": 8,
+          "price": 936.68
+        },
+        {
+          "sku": "Y200",
+          "qty": 4,
+          "price": 1178.85
+        }
+      ]
+    },
+    {
+      "orderId": 4035,
+      "customer": "Proline GmbH",
+      "created": "2023-10-06",
+      "status": "processing",
+      "salesRep": "M. Wagner",
+      "delivery": {
+        "address": "Hauptstra\u00dfe 4, 45130 Essen",
+        "deliveryDate": "2023-10-15"
+      },
+      "items": [
+        {
+          "sku": "X100",
+          "qty": 6,
+          "price": 1481.14
+        },
+        {
+          "sku": "X100",
+          "qty": 10,
+          "price": 206.69
+        },
+        {
+          "sku": "Z300",
+          "qty": 3,
+          "price": 1412.76
+        },
+        {
+          "sku": "Y201",
+          "qty": 1,
+          "price": 151.87
+        },
+        {
+          "sku": "Z300",
+          "qty": 7,
+          "price": 1490.25
+        }
+      ]
+    },
+    {
+      "orderId": 4036,
+      "customer": "Proline GmbH",
+      "created": "2023-10-07",
+      "status": "cancelled",
+      "salesRep": "A. Schulz",
+      "delivery": {
+        "address": "Musterstra\u00dfe 12, 80331 M\u00fcnchen",
+        "deliveryDate": "2023-10-16"
+      },
+      "items": [
+        {
+          "sku": "Y201",
+          "qty": 4,
+          "price": 1454.58
+        },
+        {
+          "sku": "X100",
+          "qty": 10,
+          "price": 1572.2
+        },
+        {
+          "sku": "Y201",
+          "qty": 5,
+          "price": 998.39
+        }
+      ]
+    },
+    {
+      "orderId": 4037,
+      "customer": "Kranbau SE",
+      "created": "2023-10-08",
+      "status": "processing",
+      "salesRep": "T. Becker",
+      "delivery": {
+        "address": "Industriestra\u00dfe 88, 90402 N\u00fcrnberg",
+        "deliveryDate": "2023-10-09"
+      },
+      "items": [
+        {
+          "sku": "X100",
+          "qty": 10,
+          "price": 1669.68
+        },
+        {
+          "sku": "Z300",
+          "qty": 6,
+          "price": 1749.56
+        },
+        {
+          "sku": "Y200",
+          "qty": 6,
+          "price": 220.3
+        }
+      ]
+    },
+    {
+      "orderId": 4038,
+      "customer": "CloudNet GmbH",
+      "created": "2023-10-09",
+      "status": "shipped",
+      "salesRep": "T. Becker",
+      "delivery": {
+        "address": "Parkallee 7, 28209 Bremen",
+        "deliveryDate": "2023-10-14"
+      },
+      "items": [
+        {
+          "sku": "Y201",
+          "qty": 5,
+          "price": 1753.01
+        }
+      ]
+    },
+    {
+      "orderId": 4039,
+      "customer": "CloudNet GmbH",
+      "created": "2023-10-10",
+      "status": "shipped",
+      "salesRep": "A. Schulz",
+      "delivery": {
+        "address": "Hauptstra\u00dfe 4, 45130 Essen",
+        "deliveryDate": null
+      },
+      "items": []
+    },
+    {
+      "orderId": 4040,
+      "customer": "Innotech AG",
+      "created": "2023-10-11",
+      "status": "shipped",
+      "salesRep": "M. Wagner",
+      "delivery": {
+        "address": "Parkallee 7, 28209 Bremen",
+        "deliveryDate": "2023-10-16"
+      },
+      "items": [
+        {
+          "sku": "Z300",
+          "qty": 10,
+          "price": 545.98
+        },
+        {
+          "sku": "Y200",
+          "qty": 1,
+          "price": 447.15
+        },
+        {
+          "sku": "X100",
+          "qty": 2,
+          "price": 973.79
+        },
+        {
+          "sku": "Z300",
+          "qty": 6,
+          "price": 118.16
+        },
+        {
+          "sku": "Y201",
+          "qty": 8,
+          "price": 523.75
+        }
+      ]
+    },
+    {
+      "orderId": 4041,
+      "customer": "Proline GmbH",
+      "created": "2023-10-12",
+      "status": "shipped",
+      "salesRep": "A. Schulz",
+      "delivery": {
+        "address": "Hauptstra\u00dfe 4, 45130 Essen",
+        "deliveryDate": "2023-10-17"
+      },
+      "items": [
+        {
+          "sku": "Y200",
+          "qty": 9,
+          "price": 516.2
+        },
+        {
+          "sku": "X100",
+          "qty": 8,
+          "price": 1361.1
+        },
+        {
+          "sku": "Z300",
+          "qty": 4,
+          "price": 382.02
+        },
+        {
+          "sku": "Z300",
+          "qty": 10,
+          "price": 1136.4
+        }
+      ]
+    },
+    {
+      "orderId": 4042,
+      "customer": "CloudNet GmbH",
+      "created": "2023-10-13",
+      "status": "cancelled",
+      "salesRep": "T. Becker",
+      "delivery": {
+        "address": "Hauptstra\u00dfe 4, 45130 Essen",
+        "deliveryDate": "2023-10-19"
+      },
+      "items": [
+        {
+          "sku": "Y200",
+          "qty": 2,
+          "price": 1930.77
+        }
+      ]
+    },
+    {
+      "orderId": 4043,
+      "customer": "Proline GmbH",
+      "created": "2023-10-14",
+      "status": "cancelled",
+      "salesRep": "A. Schulz",
+      "delivery": {
+        "address": "Musterstra\u00dfe 12, 80331 M\u00fcnchen",
+        "deliveryDate": "2023-10-20"
+      },
+      "items": [
+        {
+          "sku": "Y201",
+          "qty": 2,
+          "price": 382.03
+        },
+        {
+          "sku": "X101",
+          "qty": 6,
+          "price": 1771.02
+        },
+        {
+          "sku": "Y200",
+          "qty": 4,
+          "price": 176.73
+        },
+        {
+          "sku": "X101",
+          "qty": 10,
+          "price": 437.76
+        }
+      ]
+    },
+    {
+      "orderId": 4044,
+      "customer": "Innotech AG",
+      "created": "2023-10-15",
+      "status": "cancelled",
+      "salesRep": "M. Wagner",
+      "delivery": {
+        "address": "Hauptstra\u00dfe 4, 45130 Essen",
+        "deliveryDate": null
+      },
+      "items": []
+    },
+    {
+      "orderId": 4045,
+      "customer": "Innotech AG",
+      "created": "2023-10-16",
+      "status": "cancelled",
+      "salesRep": "M. Wagner",
+      "delivery": {
+        "address": "Hauptstra\u00dfe 4, 45130 Essen",
+        "deliveryDate": "2023-10-21"
+      },
+      "items": [
+        {
+          "sku": "Z300",
+          "qty": 2,
+          "price": 1549.54
+        }
+      ]
+    },
+    {
+      "orderId": 4046,
+      "customer": "Proline GmbH",
+      "created": "2023-10-17",
+      "status": "shipped",
+      "salesRep": "M. Wagner",
+      "delivery": {
+        "address": "Parkallee 7, 28209 Bremen",
+        "deliveryDate": "2023-10-22"
+      },
+      "items": [
+        {
+          "sku": "Z300",
+          "qty": 8,
+          "price": 1659.83
+        },
+        {
+          "sku": "X101",
+          "qty": 10,
+          "price": 852.4
+        },
+        {
+          "sku": "X100",
+          "qty": 8,
+          "price": 405.1
+        },
+        {
+          "sku": "X101",
+          "qty": 5,
+          "price": 142.83
+        }
+      ]
+    },
+    {
+      "orderId": 4047,
+      "customer": "Kranbau SE",
+      "created": "2023-10-18",
+      "status": "shipped",
+      "salesRep": "A. Schulz",
+      "delivery": {
+        "address": "Industriestra\u00dfe 88, 90402 N\u00fcrnberg",
+        "deliveryDate": "2023-10-27"
+      },
+      "items": [
+        {
+          "sku": "Y200",
+          "qty": 6,
+          "price": 1153.15
+        },
+        {
+          "sku": "Z300",
+          "qty": 8,
+          "price": 639.97
+        }
+      ]
+    },
+    {
+      "orderId": 4048,
+      "customer": "CloudNet GmbH",
+      "created": "2023-10-19",
+      "status": "processing",
+      "salesRep": "M. Wagner",
+      "delivery": {
+        "address": "Musterstra\u00dfe 12, 80331 M\u00fcnchen",
+        "deliveryDate": "2023-10-29"
+      },
+      "items": [
+        {
+          "sku": "Z300",
+          "qty": 3,
+          "price": 896.95
+        },
+        {
+          "sku": "Z300",
+          "qty": 4,
+          "price": 773.05
+        }
+      ]
+    },
+    {
+      "orderId": 4049,
+      "customer": "Kranbau SE",
+      "created": "2023-10-20",
+      "status": "processing",
+      "salesRep": "A. Schulz",
+      "delivery": {
+        "address": "Hauptstra\u00dfe 4, 45130 Essen",
+        "deliveryDate": null
+      },
+      "items": []
+    }
+  ]
+}

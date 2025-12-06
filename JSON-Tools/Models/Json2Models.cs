@@ -21,6 +21,9 @@ namespace JSON_Tools.Models
         public DateTime Created { get; set; }
         [JsonProperty("items")]
         public List<Json2Item> Items { get; set; }
+
+        [JsonIgnore]
+        public decimal TotalAmount => Items?.Sum(i => i.ItemTotal) ?? 0;
     }
 
     public class Json2Item
@@ -31,5 +34,8 @@ namespace JSON_Tools.Models
         public int Qty { get; set; }
         [JsonProperty("price")]
         public decimal Price { get; set; }
+
+        [JsonIgnore]
+        public decimal ItemTotal => Qty * Price;
     }
 }

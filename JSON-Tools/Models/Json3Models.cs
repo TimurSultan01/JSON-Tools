@@ -26,6 +26,9 @@ namespace JSON_Tools.Models
         public Json3Delivery Delivery { get; set; }
         [JsonProperty("items")]
         public List<Json3Item> Items { get; set; }
+
+        [JsonIgnore]
+        public decimal TotalAmount => Items?.Sum(i => i.ItemTotal) ?? 0;
     }
 
     public class Json3Item
@@ -36,6 +39,9 @@ namespace JSON_Tools.Models
         public int Qty { get; set; }
         [JsonProperty("price")]
         public decimal Price { get; set; }
+
+        [JsonIgnore]
+        public decimal ItemTotal => Qty * Price;
     }
     public class Json3Delivery
     {

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:JSON_Tools"
         mc:Ignorable="d"
-        Title="JSON-Tool" Height="450" Width="700">
+        Title="JSON-Tool" Height="600" Width="1000">
 
 
     <Grid>
@@ -37,8 +37,8 @@
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="ID" Binding="{Binding OrderId}"/>
                             <DataGridTextColumn Header="Kunde" Binding="{Binding Customer}" Width="*"/>
-                            <DataGridTextColumn Header="Datum" Binding="{Binding Created, StringFormat=d}"/>
-                            <DataGridTextColumn Header="Gesamtwert" Binding="{Binding Amount, StringFormat=C2}" FontWeight="Bold"/>
+                    <DataGridTextColumn Header="Datum" Binding="{Binding Created, StringFormat=\{0:dd.MM.yyyy\}}"/>
+                    <DataGridTextColumn Header="Gesamtwert" Binding="{Binding Amount, StringFormat=C2, ConverterCulture='de-DE'}" FontWeight="Bold"/>
                         </DataGrid.Columns>
                     </DataGrid>
 
@@ -47,17 +47,19 @@
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="ID" Binding="{Binding OrderId}"/>
                             <DataGridTextColumn Header="Kunde" Binding="{Binding Customer}" Width="*"/>
-                            <DataGridTextColumn Header="Datum" Binding="{Binding Created, StringFormat=d}"/>
+                            <DataGridTextColumn Header="Datum" Binding="{Binding Created, StringFormat=\{0:dd.MM.yyyy\}}"/>
                             <DataGridTextColumn Header="Anzahl Artikel" Binding="{Binding Items.Count}"/>
-                        </DataGrid.Columns>
+                    <DataGridTextColumn Header="Gesamtwert" Binding="{Binding TotalAmount, StringFormat=C2, ConverterCulture='de-DE'}" FontWeight="Bold"/>
+                </DataGrid.Columns>
                         <DataGrid.RowDetailsTemplate>
                             <DataTemplate>
                                 <DataGrid ItemsSource="{Binding Items}" AutoGenerateColumns="False" CanUserAddRows="False">
                                     <DataGrid.Columns>
                                         <DataGridTextColumn Header="SKU" Binding="{Binding Sku}"/>
                                         <DataGridTextColumn Header="Menge" Binding="{Binding Qty}"/>
-                                        <DataGridTextColumn Header="Preis" Binding="{Binding Price, StringFormat=C2}"/>
-                                    </DataGrid.Columns>
+                                <DataGridTextColumn Header="Preis" Binding="{Binding Price, StringFormat=C2, ConverterCulture='de-DE'}"/>
+                                <DataGridTextColumn Header="Gesamtwert" Binding="{Binding ItemTotal, StringFormat=C2, ConverterCulture='de-DE'}" FontWeight="Bold"/>
+                            </DataGrid.Columns>
                                 </DataGrid>
                             </DataTemplate>
                         </DataGrid.RowDetailsTemplate>
@@ -68,11 +70,12 @@
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="ID" Binding="{Binding OrderId}"/>
                             <DataGridTextColumn Header="Kunde" Binding="{Binding Customer}" Width="*"/>
-                            <DataGridTextColumn Header="Datum" Binding="{Binding Created, StringFormat=d}"/>
+                            <DataGridTextColumn Header="Datum" Binding="{Binding Created, StringFormat=\{0:dd.MM.yyyy\}}"/>
                             <DataGridTextColumn Header="Status" Binding="{Binding Status}"/>
                             <DataGridTextColumn Header="Vertreter" Binding="{Binding SalesRep}"/>
                             <DataGridTextColumn Header="Lieferung nach" Binding="{Binding Delivery.Address}" Width="*"/>
-                            <DataGridTextColumn Header="Lieferdatum" Binding="{Binding Delivery.DeliveryDate, StringFormat=d}"/>
+                    <DataGridTextColumn Header="Lieferdatum" Binding="{Binding Delivery.DeliveryDate, StringFormat=\{0:dd.MM.yyyy\}, TargetNullValue='-'}"/>
+                    <DataGridTextColumn Header="Gesamtwert" Binding="{Binding TotalAmount, StringFormat=C2, ConverterCulture='de-DE'}" FontWeight="Bold"/>
                 </DataGrid.Columns>
                         <DataGrid.RowDetailsTemplate>
                             <DataTemplate>
@@ -80,8 +83,9 @@
                                     <DataGrid.Columns>
                                         <DataGridTextColumn Header="SKU" Binding="{Binding Sku}"/>
                                         <DataGridTextColumn Header="Menge" Binding="{Binding Qty}"/>
-                                        <DataGridTextColumn Header="Preis" Binding="{Binding Price, StringFormat=C2}"/>
-                                    </DataGrid.Columns>
+                                <DataGridTextColumn Header="Preis" Binding="{Binding Price, StringFormat=C2, ConverterCulture='de-DE'}"/>
+                                <DataGridTextColumn Header="Gesamtwert" Binding="{Binding ItemTotal, StringFormat=C2, ConverterCulture='de-DE'}" FontWeight="Bold"/>
+                            </DataGrid.Columns>
                                 </DataGrid>
                             </DataTemplate>
                         </DataGrid.RowDetailsTemplate>

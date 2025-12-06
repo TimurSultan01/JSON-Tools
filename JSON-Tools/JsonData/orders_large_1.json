@@ -1,0 +1,304 @@
+{
+  "orders": [
+    {
+      "orderId": 2000,
+      "customer": "Softline GmbH",
+      "amount": 4925.32,
+      "created": "2023-07-01"
+    },
+    {
+      "orderId": 2001,
+      "customer": "PowerTools KG",
+      "amount": 4683.16,
+      "created": "2023-07-02"
+    },
+    {
+      "orderId": 2002,
+      "customer": "PowerTools KG",
+      "amount": 297.89,
+      "created": "2023-07-03"
+    },
+    {
+      "orderId": 2003,
+      "customer": "CloudNet GmbH",
+      "amount": 9626.65,
+      "created": "2023-07-04"
+    },
+    {
+      "orderId": 2004,
+      "customer": "Innotech AG",
+      "amount": 8994.08,
+      "created": "2023-07-05"
+    },
+    {
+      "orderId": 2005,
+      "customer": "PowerTools KG",
+      "amount": 3748.5,
+      "created": "2023-07-06"
+    },
+    {
+      "orderId": 2006,
+      "customer": "Bergmann KG",
+      "amount": 6159.72,
+      "created": "2023-07-07"
+    },
+    {
+      "orderId": 2007,
+      "customer": "Alpha GmbH",
+      "amount": 9759.06,
+      "created": "2023-07-08"
+    },
+    {
+      "orderId": 2008,
+      "customer": "Softline GmbH",
+      "amount": 4960.17,
+      "created": "2023-07-09"
+    },
+    {
+      "orderId": 2009,
+      "customer": "CloudNet GmbH",
+      "amount": 6405.4,
+      "created": "2023-07-10"
+    },
+    {
+      "orderId": 2010,
+      "customer": "Innotech AG",
+      "amount": 3718.31,
+      "created": "2023-07-11"
+    },
+    {
+      "orderId": 2011,
+      "customer": "Innotech AG",
+      "amount": 9669.53,
+      "created": "2023-07-12"
+    },
+    {
+      "orderId": 2012,
+      "customer": "TechnoSoft AG",
+      "amount": 2341.86,
+      "created": "2023-07-13"
+    },
+    {
+      "orderId": 2013,
+      "customer": "Delta Systems",
+      "amount": 216.34,
+      "created": "2023-07-14"
+    },
+    {
+      "orderId": 2014,
+      "customer": "Bergmann KG",
+      "amount": 5395.17,
+      "created": "2023-07-15"
+    },
+    {
+      "orderId": 2015,
+      "customer": "Softline GmbH",
+      "amount": 1412.25,
+      "created": "2023-07-16"
+    },
+    {
+      "orderId": 2016,
+      "customer": "Nordic AG",
+      "amount": 689.3,
+      "created": "2023-07-17"
+    },
+    {
+      "orderId": 2017,
+      "customer": "Innotech AG",
+      "amount": 4454.37,
+      "created": "2023-07-18"
+    },
+    {
+      "orderId": 2018,
+      "customer": "Delta Systems",
+      "amount": 3549.96,
+      "created": "2023-07-19"
+    },
+    {
+      "orderId": 2019,
+      "customer": "Nordic AG",
+      "amount": 6917.07,
+      "created": "2023-07-20"
+    },
+    {
+      "orderId": 2020,
+      "customer": "CloudNet GmbH",
+      "amount": 4553.85,
+      "created": "2023-07-21"
+    },
+    {
+      "orderId": 2021,
+      "customer": "CloudNet GmbH",
+      "amount": 4218.03,
+      "created": "2023-07-22"
+    },
+    {
+      "orderId": 2022,
+      "customer": "Bergmann KG",
+      "amount": 115.75,
+      "created": "2023-07-23"
+    },
+    {
+      "orderId": 2023,
+      "customer": "CloudNet GmbH",
+      "amount": 1027.69,
+      "created": "2023-07-24"
+    },
+    {
+      "orderId": 2024,
+      "customer": "Innotech AG",
+      "amount": 897.34,
+      "created": "2023-07-25"
+    },
+    {
+      "orderId": 2025,
+      "customer": "Muster GmbH",
+      "amount": 3219.96,
+      "created": "2023-07-26"
+    },
+    {
+      "orderId": 2026,
+      "customer": "Muster GmbH",
+      "amount": 431.36,
+      "created": "2023-07-27"
+    },
+    {
+      "orderId": 2027,
+      "customer": "Proline GmbH",
+      "amount": 1600.98,
+      "created": "2023-07-28"
+    },
+    {
+      "orderId": 2028,
+      "customer": "Softline GmbH",
+      "amount": 5396.71,
+      "created": "2023-07-29"
+    },
+    {
+      "orderId": 2029,
+      "customer": "Proline GmbH",
+      "amount": 9575.96,
+      "created": "2023-07-30"
+    },
+    {
+      "orderId": 2030,
+      "customer": "Proline GmbH",
+      "amount": 566.59,
+      "created": "2023-07-01"
+    },
+    {
+      "orderId": 2031,
+      "customer": "Alpha GmbH",
+      "amount": 1036.12,
+      "created": "2023-07-02"
+    },
+    {
+      "orderId": 2032,
+      "customer": "Muster GmbH",
+      "amount": 7079.78,
+      "created": "2023-07-03"
+    },
+    {
+      "orderId": 2033,
+      "customer": "Kranbau SE",
+      "amount": 1831.16,
+      "created": "2023-07-04"
+    },
+    {
+      "orderId": 2034,
+      "customer": "Kranbau SE",
+      "amount": 6321.76,
+      "created": "2023-07-05"
+    },
+    {
+      "orderId": 2035,
+      "customer": "TechnoSoft AG",
+      "amount": 424.37,
+      "created": "2023-07-06"
+    },
+    {
+      "orderId": 2036,
+      "customer": "Nordic AG",
+      "amount": 2892.66,
+      "created": "2023-07-07"
+    },
+    {
+      "orderId": 2037,
+      "customer": "Innotech AG",
+      "amount": 9816.36,
+      "created": "2023-07-08"
+    },
+    {
+      "orderId": 2038,
+      "customer": "Bergmann KG",
+      "amount": 5705.71,
+      "created": "2023-07-09"
+    },
+    {
+      "orderId": 2039,
+      "customer": "Delta Systems",
+      "amount": 2380.58,
+      "created": "2023-07-10"
+    },
+    {
+      "orderId": 2040,
+      "customer": "Muster GmbH",
+      "amount": 4575.97,
+      "created": "2023-07-11"
+    },
+    {
+      "orderId": 2041,
+      "customer": "PowerTools KG",
+      "amount": 8175.6,
+      "created": "2023-07-12"
+    },
+    {
+      "orderId": 2042,
+      "customer": "Alpha GmbH",
+      "amount": 9813.8,
+      "created": "2023-07-13"
+    },
+    {
+      "orderId": 2043,
+      "customer": "Muster GmbH",
+      "amount": 8841.37,
+      "created": "2023-07-14"
+    },
+    {
+      "orderId": 2044,
+      "customer": "Delta Systems",
+      "amount": 4439.52,
+      "created": "2023-07-15"
+    },
+    {
+      "orderId": 2045,
+      "customer": "Muster GmbH",
+      "amount": 8738.76,
+      "created": "2023-07-16"
+    },
+    {
+      "orderId": 2046,
+      "customer": "Kranbau SE",
+      "amount": 8080.55,
+      "created": "2023-07-17"
+    },
+    {
+      "orderId": 2047,
+      "customer": "CloudNet GmbH",
+      "amount": 4064.46,
+      "created": "2023-07-18"
+    },
+    {
+      "orderId": 2048,
+      "customer": "Innotech AG",
+      "amount": 9280.79,
+      "created": "2023-07-19"
+    },
+    {
+      "orderId": 2049,
+      "customer": "Vision IT",
+      "amount": 137.74,
+      "created": "2023-07-20"
+    }
+  ]
+}
