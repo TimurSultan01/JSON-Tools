@@ -17,7 +17,8 @@ __Sofortiger Start (Für Endbenutzer)__
 - __Framework__: .NET 10.0
 - __JSON Parsing__: Newtonsoft.Json (v13.0.x)
 - __MVVM__: CommunityToolkit.Mvvm (v8.4.x)
-- __Office Export__: ClosedXML (v0.105.x)
+- __Office Export__: ClosedXML (v0.105.x
+- __Office Export__: EPPlus (5.8.x)
 
 ## Architektur 
 Das Projekt folgt dem __Model-View-ViewModel (MVVM)__ Entwurfsmuster, um eine klare Trennung zwischen der Benutzeroberfläche (View), der Geschäftslogik (ViewModel) und den Daten (Model/Services) zu gewährleisten.
