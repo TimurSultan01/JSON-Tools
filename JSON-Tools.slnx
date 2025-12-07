@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="JSON-Tools/JSON-Tools.csproj" />
+  <Project Path="JSON_Tools.Tests/JSON_Tools.Tests.csproj" Id="87aeae80-290c-4444-a1a5-5048ff8718f5" />
 </Solution>
