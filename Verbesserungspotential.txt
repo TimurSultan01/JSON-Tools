@@ -1,0 +1,50 @@
+1. Erweiterte Datenverarbeitung
+
+Batch-Processing & Merging:
+- Aktuell kann nur eine Datei pro Vorgang bearbeitet werden. Im Arbeitsalltag liegen Daten oft zerstückelt vor (z.B. orders_jan.json, orders_feb.json).
+-> Implementierung einer "Multi-Select"-Funktion beim Datei-Dialog. Software kann abfragen, ob Dateien in separate Tabs geöffnet oder zu einer großen Liste gemergt werden soll.
+
+
+Dynamische JSON-Formate:
+- Programm kann derzeit nur drei spezifische Formate einlesen, ändert sich z.B ein Feldname in der JSON, stürtz der Import ab.
+-> Implementierung eines "Mapping-Wizard". Nutzer lädt JSON hoch und zieht per Drag-and-Drop die Felder der JSON auf die internen Datenfelder.
+
+
+Definieren von eigenen gültigen JSON-Formaten:
+- Nutzer kann eigene JSON-Formate definieren, im Hintergrund könnte es einen Generator geben, der die benötigte Logik (z.B. neue Modell,Importer etc) erstellt, damit das Format verarbeitet werden kann.
+
+
+Abändern von JSON-Inhalt in der Software:
+- Nutzer hat nur lesenden Zugriff auf die JSON in der Software. Man könnte es ermöglichen, dass Werte geändert werden können, so dass sie auch im Export erhalten bleiben.
+
+
+2. Datenanalyse
+
+Filter- & Suchfunktionen:
+- Bei großen Dateien verliert man schnell den Überblick.
+-> Suchleiste sowie Filteroptionen pro Spalte.
+
+Individuelle Diagramm-Konfiguration:
+- die aktuell generierten Excel-Diagramme sind statisch im Code definiert, aber nicht jeder braucht z.B. ein Kuchendiagramm.
+-> Konfigurationsfenster vor dem Export, der Nutzer kann wählen:
+	- Welche Achsen?
+	- Welcher Diagrammtyp?
+	- Soll das Diagramm in eine externe Excel-Datei gespeichert werden?
+	
+
+3. User Experience & Komfort
+
+Persistente Einstellungen:
+- Speichern von UserPreferences. Dazu gehören:
+	- Letzter Speicherpfad
+	- Darkmode
+	- Fenstergröße & -position beim letzten Schließen
+	- zuletzt geöffnete JSON-Dateien
+	-uvm.
+	
+
+4. Code-Qualität
+- Code nutzt aktuell spezifische Klassen (Json1Order, etc.).
+-> Einführung eines Interfaces, das alle gemeinsamen Eigenschaften wie OrderId, Customer vorschreibt.
+	-> Der Excel-Export-Service könnte dann generisch gegen das Interface arbeiten.
+	-> Weniger sich wiederholender Code für die verschiedenen Formate
